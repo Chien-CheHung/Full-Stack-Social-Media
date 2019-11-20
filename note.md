@@ -53,3 +53,16 @@ front-end development order
 3. action
 4. component
 5. App.js
+
+Heroku
+
+1. heroku --version
+2. heroku login
+3. heroku create
+4. git init(optional)
+5. git add .(optional)
+6. git status(optional)
+7. git commit -m "Prepared for deployment"(optional)
+8. heroku git:remote -a lit-dawn-40362
+9. git push heroku master
+10. heroku open

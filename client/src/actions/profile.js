@@ -17,9 +17,9 @@ export const getCurrentProfile = () => async dispatch => {
   if (localStorage.token) {
     setAuthToken(localStorage.token);
     try {
-      dispatch({
-        type: "LOADING"
-      });
+      // dispatch({
+      //   type: "LOADING"
+      // });
 
       const res = await axios.get("/api/profile/me");
 
@@ -42,7 +42,7 @@ export const getProfiles = () => async dispatch => {
 
   try {
     const res = await axios.get("/api/profile");
-
+    console.log(res.data);
     dispatch({
       type: GET_PROFILES,
       payload: res.data
