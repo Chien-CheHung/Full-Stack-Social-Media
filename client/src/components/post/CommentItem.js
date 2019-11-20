@@ -22,7 +22,7 @@ const CommentItem = ({
       <div>
         <p className='my-1'>{text}</p>
         <p className='post-date'>
-          發布於: <Moment format='YYYY/MM/DD'>{date}</Moment>
+          發布於: <Moment format='YYYY年MM月DD日 HH:mm'>{date}</Moment>
         </p>
         {!auth.loading && user === auth.user._id && (
           <button

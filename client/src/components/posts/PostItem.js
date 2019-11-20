@@ -25,7 +25,7 @@ const PostItem = ({
       <div>
         <p className='my-1'>{text}</p>
         <p className='post-date'>
-          發佈於: <Moment format='YYYY/MM/DD'>{date}</Moment>
+          發佈於: <Moment format='YYYY年MM月DD日 HH:mm'>{date}</Moment>
         </p>
 
         {showActions && (
